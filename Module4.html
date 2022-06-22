@@ -8,15 +8,23 @@
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
-    <h1>Coding Quiz Challenge</h1>
-    <div class="para">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum facilis hic porro, est pariatur illum! Non eius accusantium neque sed dolores tempora at omnis. Est molestias praesentium rem quasi voluptates!
-        Error explicabo debitis voluptas ratione nemo minus iusto molestiae aspernatur quia aliquam. Earum ullam odit quisquam inventore itaque exercitationem dolorem fugiat consequatur! Totam, dolores eligendi amet eius odio non facere.
-        Et incidunt temporibus reprehenderit, velit sed earum, unde perspiciatis dolore minima officia debitis modi dolores. Labore tempora quidem animi minus et ad. Dolor mollitia, dolore suscipit ratione officiis iure repellat?
-        </p>
-    </div>    
-    <div class="start">
-        <button>Start Quiz</button>
+    <div class="container">
+        <div class="score">
+            <span id="user-score">0</span>
+            <span id="total-score">/10</span>
+        </div>
+        <div class="content" id="question-area">
+            <div id="question-text"></div>
+            <div class="options">
+                <button class="btn btn-option" id="True">True</button>
+                <button class="btn btn-option" id="False">False</button>
+            </div>
+        </div>
+            
+        <div class="controls">
+            <button class="btn btn-restart" id="restart">Restart</button>
+            <button class="btn btn-submit" id="submit">Submit</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
